@@ -4,7 +4,7 @@ _ver := "0.0.1"
 pkg_name := "archy-git-aliases"
 build_dir := justfile_directory() / "build"
 temp_dir := build_dir / "temp"
-pkg_build := justfile_directory() / "pkg" / pkg_name / "pkgbuild"
+pkg_build := justfile_directory() / "pkg" / pkg_name / "PKGBUILD"
 install_target := "/etc"
 
 
@@ -21,7 +21,7 @@ build ver=_ver:
   @if [[ -d {{temp_dir}} ]]; then rm -rf {{temp_dir}}; fi
   
   mkdir -p {{temp_dir}}
-  cp archygitaliases justfile readme.md license {{temp_dir}}
+  cp archyGitAliases justfile patch.sh {{temp_dir}}
 
   tar czf {{build_dir}}/{{pkg_name}}_{{ver}}.tar.gz --directory={{temp_dir}} .
   rm -rf {{temp_dir}}
