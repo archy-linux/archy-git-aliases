@@ -1,0 +1,24 @@
+[alias]
+  co = checkout
+  ci = commit
+  br = branch
+  st = status
+  df = diff
+	lg = log --pretty=\"%C(magenta)%h%Creset %C(yellow)%d%Creset%s %C(bold cyan)(%ar)%Creset\"
+  lgg = lg --abbrev-commit --all --graph
+  unstage = reset HEAD
+  last = log -1 HEAD
+  undo = reset HEAD~
+  pushf = push --force
+  squash = !git rebase -i HEAD~$1
+  amend = commit --amend
+  aliases = config --get-regexp alias
+  brl = !git for-each-ref --format='%(refname:short) %(objectname:short)' refs/heads/
+  uncommit = reset HEAD^
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  ff = merge --ff-only
+  shelve = !git stash && git checkout
+  unshelve = stash apply && git stash drop
+  sync = !git fetch && git rebase origin/$(git symbolic-ref --short HEAD)
+  upstream = branch --set-upstream-to
+  ignore = !echo "$1" >> .gitignore
