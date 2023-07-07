@@ -1,6 +1,6 @@
 #!/bin/sh
 
-config_file="/etc/gitconfig"
+config_file="$1/gitconfig"
 include_section="[include]"
 include_line="path = archyGitAliases"
 

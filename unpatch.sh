@@ -1,5 +1,5 @@
 #!/bin/sh
 
-config_file="/etc/gitconfig"
+config_file="$1/gitconfig"
 
 sed -i '/^[[:space:]]*path = archyGitAliases/d' "$config_file"
