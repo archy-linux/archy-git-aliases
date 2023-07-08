@@ -15,7 +15,7 @@ paru archy-git-aliases-git
 * First you just need to install the [just task runner][just] 
 * Then clone this repository 
     ```sh
-    git clone --depth 1 https://github.com/archy-linux/archy-slstatus.archy-git-aliases.git
+    git clone --depth 1 https://github.com/archy-linux/archy-git-aliases.git
     ```
 * And run the install task as a root
     ```
