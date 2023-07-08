@@ -50,4 +50,5 @@ paru archy-git-aliases-git
 | upstream | Sets the upstream branch for the current branch.                                                   |
 | ignore   | Adds a file to the `.gitignore` file.                                                              |
 
+[just]: https://github.com/casey/just
 
